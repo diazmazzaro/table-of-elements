@@ -10,5 +10,12 @@ $(document).ready(function(){
     }
     
   });
+
+  window.selectByMatterState = function(state, clear=true){
+    if(clear){
+      $('.element-card[data-selected]').removeAttr('data-selected');
+    }
+    $('.element-card[data-matter-states="' + state+'"]').attr('data-selected', 'true');
+  }
   
 });
