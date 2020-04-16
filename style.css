@@ -18,13 +18,11 @@ body {
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
   min-height: 100%;
   margin: 0px auto;
   padding: 20px;
   box-sizing: border-box;
   display: -webkit-box;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
@@ -37,8 +35,8 @@ body {
 
 .element-card {
   position: relative;
-  width: 100px;
-  height: 120px;
+  width: 6em;
+  height: 7em;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transform: rotatey(0deg) translatex(0px) translatey(0px);
@@ -50,7 +48,7 @@ body {
   cursor: pointer;
 }
 .element-card:hover {
-  -webkit-transform: rotatey(45deg) translatex(0px) translatey(0px);
+  -webkit-transform: rotatey(45deg) transl7atex(0px) translatey(0px);
           transform: rotatey(45deg) translatex(0px) translatey(0px);
 }
 .element-card.open {
@@ -76,7 +74,7 @@ body {
   position: absolute;
   top: 50%;
   left: 0;
-  font-size: 42px;
+  font-size: 2.5em;
   margin: -35px 0 0 0;
   text-align: center;
   color: #324048;
@@ -87,16 +85,16 @@ body {
   top: 50%;
   left: 0;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.7em;
   margin: 15px 0 0 0;
   text-align: center;
   color: #324048;
 }
 .element-card .front-facing .atomic-number {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 12px;
+  top: 7px;
+  left: 7px;
+  font-size: 0.7em;
   color: #2980b9;
 }
 .element-card .front-facing .atomic-mass {
