@@ -1,6 +1,6 @@
 <html lang="en" class=""><head>
 <meta charset="UTF-8">
-<title>CodePen Demo</title>
+<title>Periodic table</title>
 <meta name="robots" content="noindex">
 <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
 <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
@@ -9,6 +9,23 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<ul class="element-nav">
+  <li nav-title>Select by Matter State:</li>
+  <li><a href="javascript:window.selectByMatterState('gas', true)">GAS</a></li>
+  <li><a href="javascript:window.selectByMatterState('liquid', true)">Liquid</a></li>
+  <li><a href="javascript:window.selectByMatterState('solid', true)">Solid</a></li>
+  <li><a href="javascript:window.selectByMatterState('unknown', true)">(Unknown)</a></li>
+  <li nav-title>by Group:</li>
+  <li><a href="javascript:window.selectByGroup('nonmetals', true)">Nometals</a></li>
+  <li><a href="javascript:window.selectByGroup('noble-gases', true)">Noble Gas</a></li>
+  <li><a href="javascript:window.selectByGroup('post-transition-metals', true)">Post-transition Metals</a></li>
+  <li><a href="javascript:window.selectByGroup('transition-metals', true)">Transition Metals</a></li>
+  <li><a href="javascript:window.selectByGroup('alkali-earth-metals', true)">Alkaline Earth Metals</a></li>
+  <li><a href="javascript:window.selectByGroup('alkali-metals', true)">Alkaline Metals</a></li>
+  <li><a href="javascript:window.selectByGroup('lanthanoids', true)">Lanthanoids</a></li>
+  <li><a href="javascript:window.selectByGroup('actinoids', true)">Actinoids</a></li>
+  <li data-clear style="float:right"><a class="active" href="javascript:window.selectByMatterState('xXxXx', true)">X</a></li>
+</ul>
 <div class="container">
 <table> 
 <!-- ROW  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  -->
@@ -78,7 +95,7 @@
     1
   </td>
   <td>  
-  <div class="element-card" data-matter-states="gas" data-group="nonmetals">
+  <div class="element-card" data-matter-states="gas" data-group="nonmetals" >
     <div class="front-facing">
       <h1 class="abr">H</h1>
       <p class="title">Hydrogen</p>

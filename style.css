@@ -208,6 +208,22 @@ body {
 }
 
 
+.element-card[data-disabled]{
+  box-shadow: 0px 0px 0px rgba(0, 169, 255, 0.78);
+}
+
+.element-card[data-disabled] .front-facing {
+    background-color: #a8a8a8 !important;
+    border: 2px #656565 solid !important;
+}
+
+.element-card[data-disabled] .front-facing .abr {
+    color: #6c797f !important;
+}
+
+
+
+
 td.extra{
   color: #e2e8ee;
   font-size: 2em;
@@ -229,6 +245,47 @@ td.extra{
 
 .element-card[data-matter-states="unknown"] .front-facing .abr {
   color: #7878b1;
+}
+
+ul.element-nav {
+/*  position: fixed;
+  top: 0;*/
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+ul.element-nav li {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.element-nav li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+ul.element-nav li[data-clear] {
+  padding: 3px;
+}
+
+ul.element-nav li[data-clear] a {
+    background-color: #d90000;
+    border-radius: 29px;
+    font-weight: bold;
+    padding: 10px 13px;
+    margin-right: 10px;
+}
+
+ul.element-nav li:not([nav-title]):hover {
+  background-color: #111;
 }
 
 @media screen and (max-width: 800px) {
